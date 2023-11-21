@@ -1,7 +1,7 @@
 import {startTransaction, configureScope, captureMessage} from "@sentry/nextjs";
 import { getStream, wait } from "@/utils";
 
-const MESSAGE = 'Simple message (Edge)'
+const MESSAGE = 'Simple message (Edge Runtime + Stream Response)'
 
 export const GET = async () => {
 	const {readable, controller} = getStream()
